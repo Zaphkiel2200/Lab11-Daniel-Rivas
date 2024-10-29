@@ -25,25 +25,25 @@ body {
     color: #fff;
     border-radius: 12px;
 }
-
 .agents-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 20px;
     max-width: 1200px;
     margin: 0 auto;
-}
+  }
 
-.agent-card {
+  .agent-card {
     background-color: #1f2731;
     border-radius: 15px;
     overflow: hidden;
     transition: transform 0.3s;
-}
+    
+  }
 
-.agent-card:hover {
+  .agent-card:hover {
     transform: translateY(-10px);
-}
+  }
 
 .agent-image {
     width: 100%;
