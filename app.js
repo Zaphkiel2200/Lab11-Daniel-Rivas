@@ -23,3 +23,23 @@ class Agente {
         `;
     }
 }
+
+
+class AgentesApp {
+    constructor() {
+        this.agentes = [];
+        this.contenedor = document.getElementById('agentsContainer');
+        this.inputBusqueda = document.getElementById('searchInput');
+        this.init();
+    }
+
+    async init() {
+        try {
+            await this.obtenerAgentes();
+            this.configurarBuscador();
+            this.renderizarAgentes(this.agentes);
+        } catch (error) {
+            console.error('Error al inicializar la aplicación:', error);
+            this.mostrarError();
+        }
+    }
