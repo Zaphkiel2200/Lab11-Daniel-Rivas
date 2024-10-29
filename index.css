@@ -54,3 +54,19 @@ body {
 .agent-info {
     padding: 15px;
 }
+
+
+.agent-role {
+    font-size: 18px;
+    color: #bbb;
+    margin-bottom: 10px;
+}
+
+.agent-abilities {
+    list-style: none;
+}
+
+.agent-abilities li {
+    margin-bottom: 5px;
+    color: #ddd;
+}
