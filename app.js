@@ -7,3 +7,19 @@ class Agente {
             .filter(ability => ability.displayName)
             .map(ability => ability.displayName);
     }
+
+    crearHTML() {
+        return `
+            <div class="agent-card">
+                <img src="${this.imagen}" alt="${this.nombre}" class="agent-image">
+                <div class="agent-info">
+                    <h2 class="agent-name">${this.nombre}</h2>
+                    <p class="agent-role">${this.rol}</p>
+                    <ul class="agent-abilities">
+                        ${this.habilidades.map(habilidad => `<li>${habilidad}</li>`).join('')}
+                    </ul>
+                </div>
+            </div>
+        `;
+    }
+}
